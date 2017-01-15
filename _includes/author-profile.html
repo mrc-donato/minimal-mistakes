@@ -15,7 +15,7 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <!-- <h3 class="author__name">{{ author.name }}</h3> -->
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
@@ -97,6 +97,14 @@
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fa fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
+      {% if author.scholar %}
+        <li><a href="https://scholar.google.com/citations?user={{ author.scholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a></li>
+      {% endif %}
+      {% if author.researchgate %}
+        <li><a href="https://www.researchgate.net/profile/{{ author.researchgate }}"><i class="ai ai-researchgate" aria-hidden="true"></i> Research Gate</a></li>
+      {% endif %}
+
+
     </ul>
   </div>
 </div>

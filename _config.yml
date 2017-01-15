@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "MARCO DONATO"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : " "
+description              : "Research website"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -52,9 +52,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-80203101-1
 
 # Google AdSense
 google_ad_client         :
@@ -63,11 +63,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Marco Donato"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : ""
+  location         : "Cambridge, MA"
+  email            : "mdonato@seas.harvard.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -75,22 +75,24 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : #"mrc-donato"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "marco-donato-ba482733"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "mrcdonato"
   vine             :
   weibo            :
   xing             :
   youtube          :
+  scholar          : "-h528wwAAAAJ&hl=en&oi=sra"
+  researchgate     : "Marco_Donato"
 
 
 # Reading Files
@@ -132,7 +134,7 @@ markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
+incremental: true
 
 
 # Markdown Processing
@@ -182,19 +184,19 @@ whitelist:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
 #     - categories
 #     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
+# layouts_dir:
+#   category: archive-taxonomy
+#   tag: archive-taxonomy
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
